@@ -5,9 +5,9 @@ canvas.width = 600;
 canvas.height = 500;
 
 const sounds = { 
-    alarm1 : new Audio('audio/alarm1.ogg'),
-    alarm2 : new Audio('audio/alarm2.ogg'),
-    alarm3 : new Audio('audio/rooster.ogg'),
+    alarm1 : new Audio('/alarm1.ogg'),
+    alarm2 : new Audio('/alarm2.ogg'),
+    alarm3 : new Audio('/rooster.ogg'),
 }
 
 let isMuted = false;
