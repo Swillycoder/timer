@@ -5,9 +5,9 @@ canvas.width = 600;
 canvas.height = 500;
 
 const sounds = { 
-    alarm1 : new Audio('/alarm1.ogg'),
-    alarm2 : new Audio('/alarm2.ogg'),
-    alarm3 : new Audio('/rooster.ogg'),
+    alarm1 : new Audio('https://raw.githubusercontent.com/Swillycoder/timer/main/alarm1.ogg'),
+    alarm2 : new Audio('https://raw.githubusercontent.com/Swillycoder/timer/main/alarm2.ogg'),
+    alarm3 : new Audio('https://raw.githubusercontent.com/Swillycoder/timer/main/rooster.ogg'),
 }
 
 let isMuted = false;
