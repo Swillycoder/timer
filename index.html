@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @font-face {
+            font-family: 'Digital-7';
+            src: url('digital-7.ttf');
+        }
+        canvas{
+            border: 2px solid black;
+            font-family: 'Digital-7', sans-serif;
+        }
+        body{
+            margin: 0;
+            background-color: slategray;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #inputField {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            font-family: 'Digital-7', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            border: 4px solid #ffa600;  /* Green border */
+            border-radius: 8px;  /* Rounded corners */
+            outline: none;
+            padding: 5px;
+            background-color: #000000;
+            color: #3bff05;
+            transition: 0.3s ease-in-out;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        #muteButton {
+            position: absolute;
+            top: 405px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            font-family: 'Digital-7', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            border: 4px solid #ff8c00;  /* Green border */
+            border-radius: 8px;  /* Rounded corners */
+            outline: none;
+            background-color: #000000;
+            color: #333;
+            transition: 0.3s ease-in-out;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        /* Add a hover effect */
+        #inputField:hover {
+            background-color: #393939;
+            border-color: #2E7D32;
+        }
+
+        /* Add a focus effect */
+        #inputField:focus {
+            border-color: #388E3C;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.8);
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <canvas id = "canvas"></canvas>
+    
+    <input type="number" id="inputField" placeholder="hh:mm:ss">
+    <button id="muteButton">Mute</button>
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
